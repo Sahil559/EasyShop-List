@@ -8,6 +8,9 @@
       <entry key="ShoppingItems">
         <State />
       </entry>
+      <entry key="User">
+        <State />
+      </entry>
       <entry key="app">
         <State>
           <runningDeviceTargetSelectedWithDropDown>
