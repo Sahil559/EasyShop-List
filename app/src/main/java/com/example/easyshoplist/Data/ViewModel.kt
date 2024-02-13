@@ -8,10 +8,7 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.launch
 
 class AuthViewModel : ViewModel() {
-    private val userRepository: UserRepository = TODO()
-
-    private val _authResult = MutableLiveData<Result<Boolean>>()
-    val authResult: LiveData<Result<Boolean>> get() = _authResult
+    private val userRepository: UserRepository
 
     init {
         userRepository = UserRepository(
@@ -19,6 +16,9 @@ class AuthViewModel : ViewModel() {
             Injection.instance()
         )
     }
+
+    private val _authResult = MutableLiveData<Result<Boolean>>()
+    val authResult: LiveData<Result<Boolean>> get() = _authResult
 
 
 
